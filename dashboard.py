@@ -1,6 +1,4 @@
 import plotly.express as px
-fig = px.bar(data_frame, x="Department", y="Attrition Rate", color="Department")
-st.plotly_chart(fig)
 
 import streamlit as st
 import pandas as pd
@@ -11,7 +9,8 @@ def show_dashboard():
 
    
     def load_data():
-        df = pd.read_csv('HR data Copy.csv')
+        df = pd.read_csv('Employee.csv')
+
         return df
 
     df = load_data()
