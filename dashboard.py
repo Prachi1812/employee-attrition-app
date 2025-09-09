@@ -1,6 +1,9 @@
+import plotly.express as px
+fig = px.bar(data_frame, x="Department", y="Attrition Rate", color="Department")
+st.plotly_chart(fig)
+
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 import plotly.graph_objects as go
 
 
